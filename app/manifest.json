@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+
+    "name": "Lestanianizer",
+    "description": "It brings the Internet to Lestania.",
+    "version": "0.1",
+    "icons": {
+        "128": "icon1.png"
+    },
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+
+    "browser_action": {
+        "default_icon": "icon1.png",
+        "default_title": "Lestanianizer"
+    },
+
+    "web_accessible_resources": [
+        "lestania.ttf"
+    ],
+
+    "permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ]
+}

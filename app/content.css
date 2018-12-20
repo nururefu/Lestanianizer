@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Lestania';
+  src: url('chrome-extension://__MSG_@@extension_id__/lestania.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Lestania' !important;
+  text-transform: lowercase !important;
+}
