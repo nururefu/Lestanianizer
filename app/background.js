@@ -29,7 +29,7 @@ function onUpdate(tabId, changeInfo, tab) {
     if (isEnabled(tabId)) {
         if (changeInfo.status == 'complete' && tab.url.startsWith('http')) {
             console.log('inject!', tabId, changeInfo, tab);
-            chrome.tabs.insertCSS(tabId, { file: 'content.css' }, function () {
+            chrome.tabs.insertCSS(tabId, { file: 'content.css', allFrames: true }, function () {
                 if (chrome.runtime.lastError) {
                     console.log('Not allowed to inject CSS into special page.', chrome.runtime.lastError);
                 }
